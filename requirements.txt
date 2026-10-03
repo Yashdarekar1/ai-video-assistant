@@ -1,0 +1,41 @@
+# ===== Core UI =====
+streamlit==1.38.0
+
+# ===== Audio Acquisition =====
+yt-dlp==2024.8.6          # Download audio from YouTube URLs
+pytube==15.0.0             # Fallback YouTube handler (optional, keep if used)
+pydub==0.25.1               # Audio format conversion / chunking
+ffmpeg-python==0.2.0         # Wrapper for ffmpeg (required by Whisper + pydub)
+
+# ===== Transcription (Local Whisper) =====
+openai-whisper==20231117
+torch==2.4.0
+torchaudio==2.4.0
+
+# ===== Hindi -> English Translation =====
+# Whisper's built-in task="translate" handles this natively.
+# Include deep-translator as a lightweight fallback/alternative.
+deep-translator==1.11.4
+
+# ===== LangChain + Mistral (LCEL summarization / action items) =====
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-community==0.2.16
+langchain-mistralai==0.1.13
+mistralai==1.0.3
+
+# ===== RAG Pipeline (ChromaDB + HF Embeddings) =====
+chromadb==0.5.5
+sentence-transformers==3.0.1
+huggingface-hub==0.24.6
+transformers==4.44.2
+
+# ===== PDF / TXT Export =====
+fpdf2==2.7.9
+reportlab==4.2.2
+
+# ===== Utilities =====
+python-dotenv==1.0.1
+numpy==1.26.4
+pandas==2.2.2
+tqdm==4.66.5

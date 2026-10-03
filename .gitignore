@@ -1,0 +1,34 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables / API keys
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/
+.idea/
+
+# Generated/downloaded files
+downloads/
+*.wav
+*.mp3
+*.mp4
+*.m4a
+
+# ChromaDB / vector database
+chroma_db/
+chroma/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
